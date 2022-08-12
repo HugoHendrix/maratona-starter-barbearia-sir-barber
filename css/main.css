@@ -18,6 +18,7 @@ body {
 .container {
     max-width: 1280px;
     margin: 0 auto;
+    
 }
 
 
@@ -101,20 +102,24 @@ body {
     align-items: flex-start;
     gap: 16px;
     padding: 96px 0;
+    justify-content: center;
 }
 
 .hero-img {
     flex: 1;
     align-self: flex-end;
+    align-content: center;
+    
 }
 
 .hero-img img {
     width: 100%;
+    
 }
 
 
 .hero-text__title {
-    font-size: 56px;
+    font-size: 3.3rem;
     line-height: 64px;
     font-family: var(--fonte1);
     font-weight:700;
@@ -122,8 +127,8 @@ body {
 }
 
 .hero-text__subtitle {
-    font-size:20px;
-    line-height:28px;
+    font-size:1.4rem;
+    line-height:30px;
     font-family: var(--1);
     max-width: 500px;
 }
@@ -231,4 +236,38 @@ body::-webkit-scrollbar {
     background-color: var(--black2);    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid var(--red1);  /* creates padding around scroll thumb */
+  }
+
+  @media (max-width:800px) {
+    .container, .header {
+        display: inline-block;
+        width: 100%;
+       
+    }
+     
+    .horario {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .hero-text {
+        display: block;
+        width: 100%;
+        margin: 0;
+       
+        
+    }
+    
+    .hero-img {
+        width: 100%;
+        margin: 0;
+        
+    }
+    
+    .hero-img img {
+        width: 100%;
+        margin: 0;
+        
+    }
+    
   }
