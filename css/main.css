@@ -214,8 +214,6 @@ body {
 
 
 
-
-
 .ftr {
     background-color: var(--black1);
     color: white;
@@ -240,39 +238,16 @@ body::-webkit-scrollbar {
     border: 3px solid var(--red1);  /* creates padding around scroll thumb */
   }
 
-  @media (max-width:390px) {
-
-
-    .container, .header {
-        display: inline-block;
-        width: 100%;
-        margin: 0 auto;
-       
-    }
-     
+  @media (min-width:400px) {
+  
     .horario {
-        display: inline-block;
-        margin: 0 auto;
-        padding: 60px;
-    }
-    .hero-text {
-        display: block;
-        width: 100%;
-        margin: 0;
-       
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        align-items: center;
+        margin: 0 auto;      
+        flex: 1;           
         
     }
-    
-    .hero-img {
-        width: 100%;
-        margin: 0;
-        
-    }
-    
-    .hero-img img {
-        width: 100%;
-        margin: 0;
-        
-    }
-    
+
   }
